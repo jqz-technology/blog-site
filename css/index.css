@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 18%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid lightgray;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+

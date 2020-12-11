@@ -1,9 +1,61 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>This is JQZ's technology site!</title>
-  </head>
-  <body>
-    <p>This is a technology blog from JQZ, to be built ...</p>
-  </body>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body style="font-family:Verdana;">
+
+<div style="background-color:#f1f1f1;padding:15px;">
+  <h1>JQZ's software blog</h1>
+  <h3>algorithms & robotics</h3>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <div class="menuitem">GrahamScan</div>
+    <div class="menuitem">Something new</div>
+  </div>
+
+  <div class="main">
+    <h2>What's Graham Scan Algorithm</h2>
+    <p>It finds convex hull.</p>
+
+    <div>
+      <h3>From the following input</h3>
+      <img src="grahamScanInput.jpg" style="width:80%">
+    </div>
+
+    <div>
+      <h3>You will get these</h3>
+      <img src="grahamScan.jpg" style="width:80%">
+    </div>
+
+    <div>
+      <h2>How?</h2>
+      <ol>
+        <li>
+          <div>
+            <p>Find lowest point P0</p>
+            <img src="grahamScanFindP0.jpg" style="width:80%">
+          </div>
+        </li>
+        <li>
+          <div>
+            <p>Order the rest points according to the angles from the P0</p>
+            <img src="grahamScanSortRest.jpg" style="width:80%">
+          </div>
+        </li>
+        <li>Start doing scan from P0, and P1(1st of sorted of all rest points), if the progressing to the next point is a left turn, push it to the stack, if it's a right turn, pop out the stack until it's a left
+            <i>[this step is a bit complex, I'm thinking a way to express the steps in GIF...]
+            </i>
+        </li>
+      </ol>
+    </div>
+
+  </div>
+</div>
+
+</body>
 </html>
+
