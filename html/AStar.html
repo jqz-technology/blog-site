@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="utf-8" />
-  <title>JQZ's Software Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="../css/index.css">
   <script data-ad-client="ca-pub-2128320169614759" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 <body style="font-family:Verdana; background-color:#3d3939;">
@@ -16,13 +14,13 @@
   <div class="dropdown">
     <button onclick="algorithms()" class="dropbtn">Algorithms</button>
     <div id="myDropdown" class="dropdown-content">
-      <a href="html/grahamScan.html">Graham Scan</a>
-      <a href="html/AStar.html">A Star Searching</a>
+      <a href="grahamScan.html">Graham Scan</a>
+      <a href="AStar.html">A Star Searching</a>
     </div>
   </div>
 
   <div class="menubutton" id="aboutbutton">
-    <a href="html/About.html">About</a>
+    <a href="About.html">About</a>
   </div>
 </div>
 
@@ -47,6 +45,48 @@
     }
   }
 </script>
+
+
+<section>
+  <article>
+    <h2>A* search</h2>
+    <h2>What's A* Searching</h2>
+    <p>It finds shortest path quickly.</p>
+
+    <div>
+      <h3>From the following input, searching A to H</h3>
+      <img src="../images/AStarInput.jpg" style="width:80%">
+    </div>
+
+    <div>
+      <h3>You will get these</h3>
+      <img src="../images/AStarOutput.jpg" style="width:80%">
+    </div>
+
+    <div>
+      <h2>How?</h2>
+      <ol>
+        <li>
+          <div>
+            <p>Start from putting all paths from starting node into priority queue</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <p>get the lowest cost path from queue, explore 1 more step, then put the result in the queue again</p>
+          </div>
+        </li>
+        <li>
+           <div>
+             <p>iterate the step above, until it finds the path or quit without find the path
+           </div>
+        </li>
+      </ol>
+    <a href="https://github.com/jqz-technology/algorithms/blob/main/AStar.ipynb">You can find the code from github</a>
+  </article>
+
+  </div>
+</div>
 
 </body>
 </html>
